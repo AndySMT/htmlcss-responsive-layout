@@ -54,8 +54,17 @@ ul {
 .a-center {
     align-items: center;
 }
+
 .f-wrap {
     flex-wrap: wrap;
+}
+
+/* ********************************
+                SPACING
+******************************** */
+
+.d-none-mobile {
+    display: none;
 }
 
 
@@ -64,6 +73,11 @@ ul {
 ******************************** */
 .p-5-0 {
     padding: 10px 0;
+}
+.gigi {
+
+    margin-top: 20px;
+
 }
 
 /* ********************************
@@ -76,7 +90,7 @@ header a {
 }
 
 body {
-    font-family: Montserrat, Helvetica Neue, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
     background-color: var(--color-bg-color);
 }
 
@@ -99,24 +113,46 @@ ul li {
     padding: 5px 15px;
     margin-bottom: 5px;
 }
+
 #recipe {
     padding: 5px 15px;
     margin: 20px 0px 20px 0px;
 }
+
 #recipe-card {
     border-radius: 10%;
     box-shadow: 5 5px 5px 5 rgba(0, 0, 0, 0.5);
 }
+
 .mobile-box-social {
     border: 1px solid rgb(250, 250, 250);
     border-radius: 50%;
     padding: 15px 20px;
     background-color: var(--color-white);
 }
-.presentation .img {
-    width: 40%;
-    object-position: center;
+
+.image {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    padding: 20px;
 }
+
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer nav a {
+    color: white;
+    margin: 10px 10px;
+    margin-top: 10px;
+}
+
+/* .float-top */
 
 /* ********************************
             TEXT
@@ -128,6 +164,7 @@ ul li {
 .text-gray {
     color: #a6a6a6;
 }
+
 .text-purple {
     color: var(--color-dark-text);
 }
@@ -137,6 +174,10 @@ h1 {
     font-weight: 500;
     font-style: normal;
     font-size: 3rem;
+}
+
+#caps {
+    text-transform: uppercase;
 }
 
 /* ********************************
@@ -153,18 +194,18 @@ header {
 /* ********************************
             MEDIA
 ******************************** */
-@media screen and (min-width: 576) {
-    .d-none {
-        display: none;
-    }
-    .ads {
-        display: none;
+/* large mobile */
+@media screen and (min-width: 576px) {}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .d-none-mobile {
+        display: block;
     }
 }
 
-@media screen and (min-width: 768) {}
-
-@media screen and (min-width: 992) {
+/* dekstop */
+@media screen and (min-width: 992px) {
     .j-between {
         justify-content: space-between;
     }
