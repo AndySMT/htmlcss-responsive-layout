@@ -1,0 +1,171 @@
+/* ********************************
+            RESET
+******************************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+/* ********************************
+            ROOT
+******************************** */
+:root {
+    --color-white: #ffffff;
+    --color-bg-color: #d9d9d9;
+    --color-primary: #7c69a4;
+    --color-dark-text: #4e3969;
+    --color-black: #282529;
+    --color-contrast: #fa961a;
+    --color-icon-red: #ea5556;
+    --color-icon-blue: #2871f0;
+}
+
+/* ********************************
+            FLEX
+******************************** */
+
+.d-flex {
+    display: flex;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.a-center {
+    align-items: center;
+}
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+
+/* ********************************
+            SPACING
+******************************** */
+.p-5-0 {
+    padding: 10px 0;
+}
+
+/* ********************************
+            BODY
+******************************** */
+
+header a {
+    text-decoration: none;
+    color: var(--color-contrast);
+}
+
+body {
+    font-family: Montserrat, Helvetica Neue, sans-serif;
+    background-color: var(--color-bg-color);
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    min-height: 70px;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+ul li {
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+#recipe {
+    padding: 5px 15px;
+    margin: 20px 0px 20px 0px;
+}
+#recipe-card {
+    border-radius: 10%;
+    box-shadow: 5 5px 5px 5 rgba(0, 0, 0, 0.5);
+}
+.mobile-box-social {
+    border: 1px solid rgb(250, 250, 250);
+    border-radius: 50%;
+    padding: 15px 20px;
+    background-color: var(--color-white);
+}
+.presentation .img {
+    width: 40%;
+    object-position: center;
+}
+
+/* ********************************
+            TEXT
+******************************** */
+.bold {
+    font-weight: bold;
+}
+
+.text-gray {
+    color: #a6a6a6;
+}
+.text-purple {
+    color: var(--color-dark-text);
+}
+
+h1 {
+    font-family: "Nerko One", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+/* ********************************
+            BACKGROUND
+******************************** */
+header {
+    background-color: var(--color-white);
+}
+
+.bg-white {
+    background-color: var(--color-white);
+}
+
+/* ********************************
+            MEDIA
+******************************** */
+@media screen and (min-width: 576) {
+    .d-none {
+        display: none;
+    }
+    .ads {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768) {}
+
+@media screen and (min-width: 992) {
+    .j-between {
+        justify-content: space-between;
+    }
+}
